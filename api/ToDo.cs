@@ -6,6 +6,8 @@ public class ToDo
 
     public DateOnly? CompletedDate { get; set; }
 
+    public DateOnly? CompleteByDate { get; set; }
+
     public bool Done { get; set; } = false;
 
     public string Name? { get; set; }
