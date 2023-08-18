@@ -10,5 +10,5 @@ public class ToDo
 
     public bool Done { get; set; } = false;
 
-    public string Name? { get; set; }
+    public string? Name { get; set; }
 }
