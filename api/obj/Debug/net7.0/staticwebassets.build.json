@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8sCheSZnWt3CbIzB7ENeiT4a3Gc7q9qQJCg8AyUnbmI=",
+  "Source": "az-todo",
+  "BasePath": "_content/az-todo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
