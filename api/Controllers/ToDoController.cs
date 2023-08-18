@@ -7,7 +7,11 @@ namespace az_todo.Controllers;
 [Route("[controller]")]
 public class ToDoController : ControllerBase
 {
-    private static List<ToDo> ToDos = new List<ToDo> {
+    // private static List<ToDo> ToDos = new List<ToDo> {
+    //     new ToDo {}
+    // };
+
+    private static string[] ToDos = new[] {
         "first todo"
     };
 
@@ -19,7 +23,7 @@ public class ToDoController : ControllerBase
     }
 
     [HttpGet(Name = "GetToDos")]
-    public IEnumerable<ToDo> Get()
+    public IEnumerable<string> Get()
     {
         return ToDos;
     }
