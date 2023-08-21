@@ -7,11 +7,8 @@ namespace az_todo.Controllers;
 [Route("[controller]")]
 public class ToDoController : ControllerBase
 {
-    // private static List<ToDo> ToDos = new List<ToDo> {
-    //     new ToDo {}
-    // };
 
-    private static string[] ToDos = new[] {
+    private static List<string> ToDos = new List<string> {
         "first todo"
     };
 
@@ -26,5 +23,13 @@ public class ToDoController : ControllerBase
     public IEnumerable<string> Get()
     {
         return ToDos;
+    }
+
+    [HttpPost(Name = "PostTodo")]
+    public string Post(string todo)
+    {
+        ToDos.Add(todo);
+
+        return todo;
     }
 }
